@@ -4,19 +4,64 @@ body {
     padding: 0;
     background: #f0f0f0;
 }
+
 #resume {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.profile {
+    text-align: center;
+}
+
 .profile img {
     width: 150px;
     border-radius: 50%;
 }
+
 .profile h1 {
     font-size: 2em;
     margin: 10px 0;
+}
+
+.skills, .experience {
+    margin-top: 20px;
+}
+
+.skills h2, .experience h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.experience .job {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, max-height 0.3s;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+.experience .job.expanded {
+    background: #d4edda;
+    max-height: 1000px; /* or a large enough value to fit content */
 }
